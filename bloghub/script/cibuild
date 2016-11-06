@@ -1,0 +1,13 @@
+#!/bin/sh
+# Usage: script/cibuild
+# CI build script
+#
+set -e
+
+echo "Tests started at..."
+date "+%H:%M:%S"
+
+# run tests
+echo "Running tests ..."
+date "+%H:%M:%S"
+script/test

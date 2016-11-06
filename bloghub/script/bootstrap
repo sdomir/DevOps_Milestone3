@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e
+
+# TODO: Should check if Java&Maven exist otherwise install it
+
+echo "==> Installing Maven dependencies & Packaging…"
+
+mvn package
