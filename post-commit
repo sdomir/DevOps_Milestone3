@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# save the file as <git_directory>/.git/hooks/pre-commit
+
+echo "Running Maven install to check for errors"
+# retrieving current working directory
+CWD=`pwd`
+MAIN_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+echo $MAIN_DIR
+# go to main project dir
+cd $MAIN_DIR/../../bloghub
+# running maven clean test
+mvn install
+if [ $? -ne 0 ]; then
+  "Error while testing the code"
+  # go back to current working dir
+  cd $CWD
+  exit 1
+fi
+cd $MAIN_DIR/../../
+docker build -t rahunair/my-app .
+docker push rahunair/my-app
+if [ $? -ne 0 ]; then
+  "Error while running Docker"
+  # go back to current working dir
+  cd $CWD
+  exit 1
+fi
+cd $CWD
