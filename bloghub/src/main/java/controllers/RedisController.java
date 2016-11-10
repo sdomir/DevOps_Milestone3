@@ -28,7 +28,7 @@ public class RedisController {
 
 	public static void init() {
         // Syntax: redis://[password@]host[:port][/databaseNumber]
-        RedisURI myURI = new RedisURI("localhost", 6379, 60, TimeUnit.SECONDS);
+        RedisURI myURI = new RedisURI("35.162.60.37", 6379, 60, TimeUnit.SECONDS);
 		RedisClient redisClient = RedisClient.create(myURI);
         Connection = redisClient.connect();
         SyncCommands = Connection.sync();
