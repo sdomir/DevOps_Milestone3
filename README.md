@@ -19,6 +19,7 @@ We have used Amazon EC2 to set up remote servers for the deployement pipeline.
 
 Below is a layout of our setup:
 
+![alt tag](https://github.com/sdomir/DevOps_Milestone3/infrastructure.png)
 
 ## Tasks
 
