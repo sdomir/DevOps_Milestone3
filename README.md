@@ -6,6 +6,10 @@
 2) Sharat Domir (sdomir)     
 3) Swagat Bora (sbora)   
 
+## Screencast
+
+https://youtu.be/RUhXMgH5FZk
+
 ##Introduction
 
 We have used Amazon EC2 to set up remote servers for the deployement pipeline.
