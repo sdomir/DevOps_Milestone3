@@ -1,0 +1,5 @@
+#!/bin/sh
+GIT_WORK_TREE=/home/ubuntu/deploy/production-www/ git checkout -f
+docker pull swagatbora90/devops-app
+docker stop $(docker ps -a -q)
+docker run -p 80:80 swagatbora90/devops-app
