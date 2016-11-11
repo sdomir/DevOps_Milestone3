@@ -27,6 +27,6 @@ Below is a layout of our setup:
 
 We are building our application on localhost in response to a git commit. Once the build succeeds, we create a docker image of our application with all the dependecies. This image is then pushed to the docker hub. All this is automated inside the post-commit hook.
 
-We have set up a bare git repository on both the production and staging servers.Using a post-recieve hook, the server will pull the docker image from docker huband spin up a container that runs our application. All this will be triggered in response to a git push.
+We have set up a bare git repository on both the production and staging servers.Using a post-recieve hook, the server will pull the docker image from docker hub and spin up a container that runs our application. All this will be triggered in response to a git push.
 
  
