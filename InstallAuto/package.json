@@ -1,0 +1,16 @@
+{
+  "author":"swagat bora",
+  "name": "Instances",
+  "version": "0.0.0",
+  "description": "\"REDIS in AWS\"",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "aws-sdk": "^2.2.0",
+    "needle": "^0.10.0"
+  }
+}
