@@ -36,6 +36,21 @@ Code can be found in [InstallAuto](https://github.com/sdomir/DevOps_Milestone3/t
 + We are building our application on localhost in response to a git commit. Once the build succeeds, we create a docker image of our application with all the dependecies. This image is then pushed to the docker hub. All this is automated inside the post-commit hook.
 + We have set up a bare git repository on both the production and staging servers.Using a post-recieve hook, the server will pull the docker image from docker hub and spin up a container that runs our application. All this will be triggered in response to a git push.
 
+ **Setting up git repo on servers**
+ 
+ ```
+    cd deploy/production.git
+    git init --bare
+ ```   
+ **post-receive hook**
+ 
+ ```
+    GIT_WORK_TREE=$ROOT/green-www/ git checkout -f
+    docker pull <docker-image>
+    docker stop $(docker ps -a -q)
+    docker run -p 80:80 <docker-image>
+ ```
+
 ## Metrics and alerts
 
 + AWS provides us with an easy to use dashboard to set up monitoring using CloudWatch alarms, on EC2 instances.
