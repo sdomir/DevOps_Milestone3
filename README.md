@@ -6,9 +6,15 @@
 2) Sharat Domir (sdomir)     
 3) Swagat Bora (sbora)   
 
-## Screencast
+
+# Screencast
 
 https://youtu.be/RUhXMgH5FZk
+
+## Canary Demo
+
+https://youtu.be/dc4bOSmCCaQ
+
 
 ##Introduction
 
@@ -100,6 +106,8 @@ The instances that host the application were made to be a part of teha autoscali
 
 ## Canary releasing
 In our infrastructure setup we have setup two repositories namely production and staging. All pushes can be sent from the local machine to either of the two remote repositries that are setup on the remote AWS instances. This setup will allow new features to be deployed to staging and then to production if stable. Since the instances are a part of an auto scaling group that is being serviced by an elastic application load balancer the traffic will split across the two instances by AWS. We can also setup monitoring on the load balancer and set thresholds. Based on the state of the instances AWS will route traffic between the instances.
+
+![alt tag](https://github.com/sdomir/DevOps_Milestone3/blob/master/canary.png)
 
 ![alt tag](https://github.com/sdomir/DevOps_Milestone3/blob/master/loadbalance.png)
 
