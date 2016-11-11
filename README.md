@@ -46,9 +46,14 @@ Code can be found in [InstallAuto](https://github.com/sdomir/DevOps_Milestone3/t
   **Network load**
 + We have set thresholds for each metric and set up alerts using emails.
 
+![alt tag](https://github.com/sdomir/DevOps_Milestone3/blob/master/metrics.png)   
+
+![alt tag](https://github.com/sdomir/DevOps_Milestone3/blob/master/alarms.png)
+
 
 ## Autoscaling 
 
+![alt tag](https://github.com/sdomir/DevOps_Milestone3/blob/master/asg.png)
 
 ## Feature Flags
 
