@@ -52,6 +52,7 @@ Code can be found in [InstallAuto](https://github.com/sdomir/DevOps_Milestone3/t
 
 
 ## Autoscaling 
+The instances that host the application were made to be a part of teha autoscaling group. AWS provides managed cloud options to define the minimum and maximum size for the number of instances. We defined the rules for maximum and minimum number of instances and CPU utlization parameters to perform scaling. Based on this these configurations AWS will handle scaling up and down of the number of instances in the auto scaling group.
 
 ![alt tag](https://github.com/sdomir/DevOps_Milestone3/blob/master/asg.png)
 
