@@ -113,3 +113,7 @@ In our infrastructure setup we have setup two repositories namely production and
 
 ![alt tag](https://github.com/sdomir/DevOps_Milestone3/blob/master/tcpdump.png)
  
+When the health of any instance goes down we get an email notification  
+
+![alt tag](https://github.com/sdomir/DevOps_Milestone3/blob/master/notification.png)
+
