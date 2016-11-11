@@ -41,6 +41,7 @@ Code can be found in [InstallAuto](https://github.com/sdomir/DevOps_Milestone3/t
 + AWS provides us with an easy to use dashboard to set up monitoring using CloudWatch alarms, on EC2 instances.
 + We are monitoring two metrics namely
   **CPU Utilization**
+  
   **Network load**
 + We have set thresholds for each metric and set up alerts using emails.
 
