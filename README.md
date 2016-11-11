@@ -68,12 +68,12 @@ The instances that host the application were made to be a part of teha autoscali
 
 ## Flag value is 0
 
-
+![alt tag](https://github.com/sdomir/DevOps_Milestone3/blob/master/without.png)
 
 
 ## Flag value is 1
 
-
+![alt tag](https://github.com/sdomir/DevOps_Milestone3/blob/master/withfeature.png)
 
 
 + We log into the Server running Redis server and open the redis cli. From the CLI, we control the setting of values of the key "flag". As we can saw, all the new features are deployed only if the flag value is set to true.
